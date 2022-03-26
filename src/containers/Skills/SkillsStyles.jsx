@@ -35,13 +35,13 @@ export const Title = styled.h2`
 `;
 
 export const SkillsContainer = styled.div`
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 
-    @media ${props => props.theme.breakpoints.xmd} {
-        flex-direction: column;
-        gap: 4rem;
-    }
+  @media ${props => props.theme.breakpoints.xmd} {
+    flex-direction: column;
+    gap: 4rem;
+  }
 `;
 
 export const SkillsList = styled(motion.div)`
@@ -53,10 +53,10 @@ export const SkillsList = styled(motion.div)`
 `;
 
 export const SkillItem = styled(motion.div)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 `;
 
 export const SkillImage = styled.div`
@@ -70,8 +70,8 @@ export const SkillImage = styled.div`
   transition: all 0.8s ease;
 
   &:hover {
-    -webkit-box-shadow: 0px 0px 7px 0px #ADA1BF; 
-    box-shadow: 0px 0px 7px 0px #ADA1BF;
+    -webkit-box-shadow: 0px 0px 7px 0px #ada1bf;
+    box-shadow: 0px 0px 7px 0px #ada1bf;
   }
 
   img {
@@ -84,79 +84,69 @@ export const SkillImage = styled.div`
     height: 60px;
 
     img {
-        width: 40px;
-        height: 40px;
+      width: 40px;
+      height: 40px;
     }
   }
-
 
   @media ${props => props.theme.breakpoints.sm} {
     width: 50px;
     height: 50px;
 
     img {
-        width: 30px;
-        height: 30px;
+      width: 30px;
+      height: 30px;
     }
   }
 `;
 
 export const Skill = styled.p`
-    font-weight: 500;
+  font-weight: 500;
 
-    @media ${props => props.theme.breakpoints.md} {
-        font-size: .8rem;
-    }
+  @media ${props => props.theme.breakpoints.xsm} {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Experiences = styled(motion.div)`
-    flex: 1;
-`
+  flex: 1;
+`;
 
 export const ExperienceItem = styled(motion.div)`
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
 
-export const ExperienceYear = styled.div`
-
-`
+export const ExperienceYear = styled.div``;
 
 export const Year = styled.p`
-    font-weight: 500;
-    font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 
-    @media ${props => props.theme.breakpoints.sm} {
-        font-size: 1rem;
-    }
-`
+  @media ${props => props.theme.breakpoints.sm} {
+    /* font-size: 1rem; */
+  }
+`;
 
-export const Experience = styled(motion.div)`
-
-`
+export const Experience = styled(motion.div)``;
 
 export const Works = styled(motion.div)`
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
 
 export const Work = styled.h4`
-    font-size: 1.4rem;
-    color: rgb(45, 46, 73);
-
-    @media ${props => props.theme.breakpoints.sm} {
-        font-size: 1.2rem;
-    }
-`
+  font-size: 1.5rem;
+  color: rgb(45, 46, 73);
+`;
 
 export const Description = styled.p`
-    font-size: 1.2rem;
-    line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.5;
 
-    @media ${props => props.theme.breakpoints.sm} {
-        font-size: 1rem;
-        line-height: 1.2;
-    }
-`
+  @media ${props => props.theme.breakpoints.sm} {
+    /* font-size: 1rem; */
+  }
+`;

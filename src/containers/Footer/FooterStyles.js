@@ -23,99 +23,111 @@ export const Contain = styled.div`
 `;
 
 export const Title = styled.h2`
-    font-size: 3rem;
-    margin-bottom: 3rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 
-    @media ${props => props.theme.breakpoints.md} {
-        font-size: 2rem;
-    }
+  @media ${props => props.theme.breakpoints.md} {
+    font-size: 2rem;
+  }
 
-    @media ${props => props.theme.breakpoints.sm} {
-        font-size: 1.7rem;
-    }
-`
+  @media ${props => props.theme.breakpoints.xsm} {
+    font-size: 1.7rem;
+  }
+`;
 
 export const FooterCards = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 
-    @media ${props => props.theme.breakpoints.xmd} {
-        flex-direction: column;
-    }
-`
+  @media ${props => props.theme.breakpoints.xmd} {
+    flex-direction: column;
+  }
+`;
 
 export const FooterCard = styled.div`
-    display: flex;
-    align-items: center;
-    width: 250px;
-    background: rgba(93, 97, 124, 0.3);
-    padding: .5rem;
-    border-radius: 8px;
-`
+  display: flex;
+  align-items: center;
+  width: 250px;
+  background: rgba(93, 97, 124, 0.3);
+  padding: 0.5rem;
+  border-radius: 8px;
+
+  @media ${props => props.theme.breakpoints.xmd} {
+    width: 100%;
+  }
+`;
 
 export const Image = styled.img`
-    width: 50px;
-    object-fit: cover;
-`
+  width: 50px;
+  object-fit: cover;
+`;
 
 export const CardItem = styled.a`
-    color: rgb(45, 46, 73);
-    font-weight: 800;
-    padding: 1rem;
-`
+  color: rgb(45, 46, 73);
+  font-weight: 800;
+  padding: 1rem;
+`;
 
 export const ContactForm = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
 
-    @media ${props => props.theme.breakpoints.xmd} {
-        width: 100%;
-    }
-`
+  @media ${props => props.theme.breakpoints.xmd} {
+    width: 100%;
+  }
+`;
 
 export const FormItem = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const Input = styled.input`
-    outline: none;
-    background: rgba(93, 97, 124, 0.3);
-    color: rgb(45, 46, 73);
-    font-weight: 800;
-    border: none;
-    border-radius: 5px;
-    padding: 1rem;
-    width: 80%;
-`
+  outline: none;
+  background: rgba(93, 97, 124, 0.3);
+  color: rgb(45, 46, 73);
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 80%;
+
+  &::placeholder {
+    color: rgb(45, 46, 73, 0.6);
+  }
+`;
 
 export const ContactMessage = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
 
 export const Message = styled.textarea`
-    width: 80%;
-    outline: none;
-    border: none;
-    min-height: 130px;
-    border-radius: 5px;
-    padding: 1rem;
-    font-weight: 800;
-    color: rgb(45, 46, 73);
-    background: rgba(93, 97, 124, 0.3);
-`
+  width: 80%;
+  outline: none;
+  border: none;
+  min-height: 130px;
+  border-radius: 5px;
+  padding: 1rem;
+  font-weight: 800;
+  color: rgb(45, 46, 73);
+  background: rgba(93, 97, 124, 0.3);
+
+  &::placeholder {
+    color: rgb(45, 46, 73, 0.6);
+  }
+`;
 
 export const Button = styled.button`
   padding: 1rem 1.5rem;
@@ -129,18 +141,14 @@ export const Button = styled.button`
   transition: all 0.4s ease;
 
   &:hover {
-      transform: scale(0.99);
+    transform: scale(0.99);
   }
 
   &:active {
-      transform: scale(1.01);
+    transform: scale(1.01);
   }
-`
+`;
 
-export const SuccessMessage = styled.div`
+export const SuccessMessage = styled.div``;
 
-`
-
-export const Text = styled.h3`
-
-`
+export const Text = styled.h3``;

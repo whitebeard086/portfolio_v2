@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import ReactTooltip from "react-tooltip";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";

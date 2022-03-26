@@ -27,11 +27,12 @@ export const Contain = styled.div`
 
 export const Span = styled.span`
   color: rgb(45, 46, 73);
-`
+`;
 
 export const Header = styled.h2`
   margin-top: 4rem;
   font-size: 3rem;
+  text-align: center;
 
   @media ${props => props.theme.breakpoints.xmd} {
     font-size: 2.3rem;
@@ -58,8 +59,8 @@ export const ProjectsFilter = styled.div`
     gap: 1rem;
   }
 
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: .7rem;
+  @media ${props => props.theme.breakpoints.xsm} {
+    font-size: 0.7rem;
   }
 `;
 
@@ -107,7 +108,7 @@ export const ProjectItem = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.sm} {
-    width: 250px;
+    width: 280px;
   }
 `;
 
@@ -148,7 +149,7 @@ export const ProjectTitle = styled.h4`
     font-size: 1.5rem;
   }
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.xsm} {
     font-size: 1.2rem;
   }
 `;
@@ -158,10 +159,10 @@ export const ProjectDescription = styled.p`
   font-size: 1.3rem;
 
   @media ${props => props.theme.breakpoints.xmd} {
-    font-size: 1.15rem;
+    font-size: 1.18rem;
   }
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.xsm} {
     font-size: 1rem;
     line-height: 1.1;
   }
@@ -175,7 +176,7 @@ export const ProjectTags = styled.div`
   margin: 1rem 0;
 
   @media ${props => props.theme.breakpoints.sm} {
-    gap: .5rem;
+    gap: 0.5rem;
   }
 `;
 
@@ -238,4 +239,4 @@ export const SourceIcon = styled(RiGithubLine)`
 export const Tooltip = styled(ReactTooltip)`
   background: rgba(46, 45, 73, 0.5) !important;
   transition: all 0.4s ease !important;
-`
+`;

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
@@ -93,6 +92,7 @@ export const Title = styled.h3`
   font-size: 2.5rem;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
+  color: rgb(45, 46, 73);
 
   @media ${props => props.theme.breakpoints.lg} {
     font-size: 2rem;
@@ -109,8 +109,8 @@ export const Body = styled.p`
   margin-bottom: 1.5rem;
 
   @media ${props => props.theme.breakpoints.lg} {
-    font-size: 1.2rem;
-    line-height: 1.3;
+    font-size: 1.4rem;
+    line-height: 1.4;
   }
 
   @media ${props => props.theme.breakpoints.xsm} {

@@ -1,4 +1,4 @@
-import { BodyText, Contain } from "../../styles/GlobalComponents";
+import { Contain } from "../../styles/GlobalComponents";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import {
   AboutContainer,
@@ -7,10 +7,8 @@ import {
   AboutText,
   Body,
   Button,
-  Link,
   Title,
 } from "./AboutStyles";
-import { motion } from "framer-motion";
 import { client, urlFor } from "../../client";
 import { useEffect, useState } from "react";
 
@@ -32,12 +30,10 @@ const About = () => {
           <AboutImage>{about && <img src={urlFor(about?.image)} alt={about?.title} />}</AboutImage>
           {about && (
             <AboutText>
-            <Title>{about.title}</Title>
-            <Body>
-              {about.body}
-            </Body>
-            <Button href="mailto:ejimalex@gmail.com">Send Me a Mail</Button>
-          </AboutText>
+              <Title>{about.title}</Title>
+              <Body>{about.body}</Body>
+              <Button href="mailto:ejimalex@gmail.com">Send Me a Mail</Button>
+            </AboutText>
           )}
         </AboutContent>
       </Contain>

@@ -34,7 +34,7 @@ export const BodyText = styled.p`
     width: 100%;
   }
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.xsm} {
     font-size: 1rem;
     line-height: 1.5;
   }
