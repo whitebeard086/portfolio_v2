@@ -8,7 +8,7 @@ const AppWrap = (Component, idName) =>
 
     useEffect(() => {
       const changeBackground = () => {
-        if (window.scrollY >= 10) {
+        if (window.scrollY >= 540) {
           setBackground(true);
         } else {
           setBackground(false);

@@ -16,7 +16,7 @@ export const Copyright = styled.div`
   align-items: flex-end;
   transition: all 0.4s ease;
   padding: 1rem 5rem;
-  position: fixed;
+  position: absolute;
   color: rgba(255, 255, 255, 0.7);
   bottom: 2rem;
   right: 0;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { ScrollToTop } from "../components";
 import { Header, Sidebar } from "../containers";
 import { Container } from "./LayoutStyles";
 
@@ -17,6 +18,7 @@ export const Layout = ({ children }) => {
       <Container>
         <main>{children}</main>
       </Container>
+      <ScrollToTop />
     </>
   );
 };

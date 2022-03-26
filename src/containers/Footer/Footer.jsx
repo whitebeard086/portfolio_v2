@@ -71,7 +71,7 @@ const Footer = () => {
               </FooterCard>
               <FooterCard>
                 <Image src={urlFor(footer.phone)} alt="phone" />
-                <CardItem href="tel: +234 905 574 099">+234 905 574 099</CardItem>
+                <CardItem href="tel: +234 905 574 0999">+234 905 574 0999</CardItem>
               </FooterCard>
             </FooterCards>
             {!isFormSubmitted ? (
