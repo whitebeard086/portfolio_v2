@@ -23,17 +23,13 @@ export const Container = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.sm} {
-    width: 60%;
-  }
-
-  @media ${props => props.theme.breakpoints.xsm} {
     width: 70%;
   }
 `;
 
 export const CloseIcon = styled(MdOutlineClose)`
   color: rgb(225, 173, 105);
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   display: none;
   transition: all 0.4s ease;
@@ -50,12 +46,13 @@ export const CloseIcon = styled(MdOutlineClose)`
 export const NavLinks = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.8rem;
   margin-top: 2rem;
 `;
 
 export const NavLink = styled.a`
   color: rgba(222, 223, 238);
+  font-size: 1.2rem;
   transition: all 0.4s ease;
 
   &.active {
@@ -75,6 +72,7 @@ export const Cv = styled.a`
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  background: rgba(45, 46, 73, 0.65);
   border: 2px solid rgb(225, 173, 105);
   color: rgba(222, 223, 238);
   transition: all 0.4s ease;
@@ -100,14 +98,17 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: center;
   padding: 0.8rem;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 2rem;
   border-radius: 8px;
   background: rgba(45, 46, 73, 0.65);
-  width: 70%;
+  width: 80%;
 
+  @media ${props => props.theme.breakpoints.sm} {
+    width: 80%;
+  }
   @media ${props => props.theme.breakpoints.xsm} {
-    width: 85%;
+    width: 90%;
   }
 `;
 

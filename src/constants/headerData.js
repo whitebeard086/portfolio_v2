@@ -36,31 +36,31 @@ export const mobileLinks = [
   {
     title: "Home",
     href: "#",
-    icon: <ImHome3 size="0.8rem" />,
+    icon: <ImHome3 size="1rem" />,
     id: 1,
   },
   {
     title: "About",
     href: "#about",
-    icon: <FaUser size="0.8rem" />,
+    icon: <FaUser size="1rem" />,
     id: 2,
   },
   {
     title: "Projects",
     href: "#projects",
-    icon: <RiGitBranchFill size="0.8rem" />,
+    icon: <RiGitBranchFill size="1rem" />,
     id: 3,
   },
   {
     title: "Skills",
     href: "#skills",
-    icon: <FaTools size="0.8rem" />,
+    icon: <FaTools size="1rem" />,
     id: 4,
   },
   {
     title: "Contact",
     href: "#contact",
-    icon: <IoMdMailUnread size="0.8rem" />,
+    icon: <IoMdMailUnread size="1rem" />,
     id: 5,
   },
 ];
