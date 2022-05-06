@@ -5,8 +5,8 @@ export const AboutContainer = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   background: rgba(93, 97, 124, 0.1);
 `;
 

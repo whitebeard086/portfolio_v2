@@ -1,7 +1,7 @@
 import { IoMdMailUnread } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
 import { ImHome3 } from "react-icons/im";
-import { RiGitBranchFill, RiInstagramFill } from "react-icons/ri";
+import { RiGitBranchFill } from "react-icons/ri";
 import { FaTelegramPlane, FaTools, FaLinkedinIn, FaUser } from "react-icons/fa";
 
 export const Links = [

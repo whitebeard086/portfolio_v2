@@ -52,7 +52,7 @@ export const NavLinks = styled.div`
 
 export const NavLink = styled.a`
   color: rgba(222, 223, 238);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: all 0.4s ease;
 
   &.active {
