@@ -1,22 +1,11 @@
 import axios from "axios";
 
-import { Contain } from "../../styles/GlobalComponents";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import {
-  AboutContainer,
-  AboutContent,
-  AboutImage,
-  AboutText,
-  Body,
-  Button,
-  Title,
-} from "./AboutStyles";
-import { client, urlFor } from "../../client";
+import { AboutContainer, AboutContent } from "./AboutStyles";
 import { useEffect, useState } from "react";
 import { GitHub, LatestRepos } from "../../components";
 
 const About = () => {
-  const [about, setAbout] = useState(null);
   const [repos, setRepos] = useState(null);
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -43,12 +32,6 @@ const About = () => {
   };
 
   useEffect(() => {
-    const query = '*[_type == "about"]';
-
-    client.fetch(query).then(data => {
-      setAbout(data[0]);
-    });
-
     getUserAndRepos();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -56,13 +39,13 @@ const About = () => {
   if (isLoading) {
     return <div>Loading...</div>;
   }
-  console.log(repos);
-  console.log(user);
 
   return (
     <AboutContainer id="about">
-      <GitHub user={user} />
-      <LatestRepos repos={repos} />
+      <AboutContent>
+        <GitHub user={user} />
+        <LatestRepos repos={repos} />
+      </AboutContent>
     </AboutContainer>
   );
 };

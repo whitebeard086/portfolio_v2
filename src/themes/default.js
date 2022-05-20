@@ -24,5 +24,6 @@ export default {
     xmd: "screen and (max-width: 870px)",
     lg: "screen and (max-width: 1024px)",
     xl: "screen and (max-width: 1280px)",
+    xxl: "screen and (max-width: 1480px)",
   },
 };
