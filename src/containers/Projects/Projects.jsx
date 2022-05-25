@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 
 import { urlFor, client } from "../../client";
 import { AppWrap, MotionWrap } from "../../wrapper";
+import { SectionTitle } from "../../components";
 import {
   Categories,
   Container,
   Contain,
-  Header,
   LiveIcon,
   ProjectContent,
   ProjectDescription,
@@ -21,7 +21,6 @@ import {
   ProjectTitle,
   SourceIcon,
   Tag,
-  Span,
   Tooltip,
 } from "./ProjectStyles";
 
@@ -39,9 +38,9 @@ const Projects = () => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (category === "All") {
-        setFilterProjects(projects)
+        setFilterProjects(projects);
       } else {
-        setFilterProjects(projects.filter((project) => project.categories.includes(category)))
+        setFilterProjects(projects.filter(project => project.categories.includes(category)));
       }
     }, 500);
   };
@@ -58,7 +57,7 @@ const Projects = () => {
   return (
     <Container id="projects">
       <Contain>
-        <Header>My <Span>Creative</Span> Portfolio</Header>
+        <SectionTitle text1="My" text2="creative" text3="portfolio" />
         <ProjectsFilter>
           {["Front-End", "Full Stack", "Blockchain", "All"].map((category, index) => (
             <Categories
@@ -85,23 +84,15 @@ const Projects = () => {
                 </ProjectTags>
                 <ProjectIcons>
                   <ProjectLink href={project.codeLink} target="_blank" rel="noopener noreferrer">
-                    <ProjectIcon
-                      data-tip="view source code"
-                    >
+                    <ProjectIcon data-tip="view source code">
                       <SourceIcon />
                     </ProjectIcon>
                   </ProjectLink>
                   <ProjectLink href={project.projectLink} target="_blank" rel="noopener noreferrer">
-                    <ProjectIcon
-                      data-tip="visit live site"
-                    >
+                    <ProjectIcon data-tip="visit live site">
                       <LiveIcon />
                     </ProjectIcon>
-                    <Tooltip 
-                      className="tooltip"
-                      effect="solid"
-                      arrowColor="#fff"
-                    />
+                    <Tooltip className="tooltip" effect="solid" arrowColor="#fff" />
                   </ProjectLink>
                 </ProjectIcons>
               </ProjectContent>

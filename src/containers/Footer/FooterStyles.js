@@ -5,6 +5,7 @@ export const Container = styled.section`
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  padding-bottom: 8rem;
 `;
 
 export const Contain = styled.div`
@@ -16,22 +17,13 @@ export const Contain = styled.div`
   padding: 0 5rem;
   margin: 0 5rem;
 
+  .title {
+    margin: 3rem 0;
+  }
+
   @media ${props => props.theme.breakpoints.xmd} {
     padding: 0;
     margin: 0 2rem;
-  }
-`;
-
-export const Title = styled.h2`
-  font-size: 3rem;
-  margin-bottom: 3rem;
-
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 2rem;
-  }
-
-  @media ${props => props.theme.breakpoints.xsm} {
-    font-size: 1.7rem;
   }
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const SectionTitle = ({ text1, text2, text3 }) => {
   return (
-    <Title>
+    <Title className="title">
       <h2>
         {text1} <span>{text2}</span> {text3}
       </h2>

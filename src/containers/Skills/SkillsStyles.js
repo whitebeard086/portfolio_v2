@@ -17,21 +17,12 @@ export const Contain = styled.div`
   align-items: center;
   margin: 4rem;
 
+  .title {
+    margin: 2rem 0;
+  }
+
   @media ${props => props.theme.breakpoints.md} {
     margin: 2rem;
-  }
-`;
-
-export const Title = styled.h2`
-  margin: 2rem 0;
-  font-size: 3rem;
-
-  @media ${props => props.theme.breakpoints.xmd} {
-    font-size: 2.3rem;
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 1.8rem;
   }
 `;
 

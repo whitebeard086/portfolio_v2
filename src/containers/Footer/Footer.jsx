@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
+import { SectionTitle } from "../../components";
 import {
   Button,
   CardItem,
@@ -16,7 +17,6 @@ import {
   Message,
   SuccessMessage,
   Text,
-  Title,
 } from "./FooterStyles";
 import { client, urlFor } from "../../client";
 
@@ -63,7 +63,7 @@ const Footer = () => {
       <Contain>
         {footer && (
           <>
-            <Title>{footer.title}</Title>
+            <SectionTitle text1="Let's" text2="have a" text3="chat" />
             <FooterCards>
               <FooterCard>
                 <Image src={urlFor(footer.email)} alt="email" />

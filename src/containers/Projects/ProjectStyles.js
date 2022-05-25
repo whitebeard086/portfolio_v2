@@ -20,27 +20,13 @@ export const Contain = styled.div`
   padding: 0 5rem;
   margin: 0 5rem;
 
+  .title {
+    margin-top: 4rem;
+  }
+
   @media ${props => props.theme.breakpoints.xmd} {
     padding: 0;
     margin: 0 5rem;
-  }
-`;
-
-export const Span = styled.span`
-  color: rgb(45, 46, 73);
-`;
-
-export const Header = styled.h2`
-  margin-top: 4rem;
-  font-size: 3rem;
-  text-align: center;
-
-  @media ${props => props.theme.breakpoints.xmd} {
-    font-size: 2.3rem;
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 1.8rem;
   }
 `;
 

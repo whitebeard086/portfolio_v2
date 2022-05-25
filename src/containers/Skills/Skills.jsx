@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
+import { SectionTitle } from "../../components";
 import {
   Contain,
   Container,
@@ -13,7 +14,6 @@ import {
   SkillItem,
   SkillsContainer,
   SkillsList,
-  Title,
   Work,
   Works,
   Year,
@@ -41,7 +41,7 @@ const Skills = () => {
   return (
     <Container>
       <Contain>
-        <Title>Skills & Experience</Title>
+        <SectionTitle text1="Skills" text2="&" text3="experiences" />
         <SkillsContainer>
           <SkillsList>
             {skills.map(skill => (
@@ -57,17 +57,15 @@ const Skills = () => {
             ))}
           </SkillsList>
           <Experiences>
-            {experience?.map((experience) => (
+            {experience?.map(experience => (
               <ExperienceItem key={experience._id}>
                 <ExperienceYear>
                   <Year>{experience.year}</Year>
                 </ExperienceYear>
                 <Experience>
-                  {experience.works.map((work) => (
+                  {experience.works.map(work => (
                     <div key={work._key}>
-                      <Works
-                        whileInView={{ opacity: [0, 1] }}
-                        transition={{ duration: 0.5 }}>
+                      <Works whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }}>
                         <Work>{work.name}</Work>
                         <Description>{work.desc}</Description>
                       </Works>
