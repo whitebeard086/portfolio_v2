@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: rgba(93, 97, 124, 0.4);
+  background: rgba(93, 97, 124, 0.1);
   min-height: 100vh;
   display: flex;
   justify-content: center;

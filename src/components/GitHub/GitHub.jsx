@@ -1,5 +1,5 @@
 import { UserContainer } from "./GitHubStyles";
-import { GithubItem } from "../../components";
+import { GithubItem, SectionTitle } from "../../components";
 
 const GitHub = ({
   user: {
@@ -17,6 +17,7 @@ const GitHub = ({
 }) => {
   return (
     <UserContainer>
+      <SectionTitle text1="My" text2="gitHub" text3="profile" />
       <div className="github-profile">
         <div className="image-container">
           <div className="image">

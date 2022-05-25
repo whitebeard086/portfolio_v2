@@ -17,6 +17,7 @@ export const Copyright = styled.div`
   transition: all 0.4s ease;
   padding: 1rem 5rem;
   position: absolute;
+  margin-top: 1rem;
   color: rgba(255, 255, 255, 0.7);
   bottom: 2rem;
   right: 0;

@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: rgba(93, 97, 124, 0.1);
+  background: rgba(93, 97, 124, 0.4);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5rem;
 `;
 
 export const Contain = styled.div`
@@ -60,7 +61,7 @@ export const SkillItem = styled(motion.div)`
 `;
 
 export const SkillImage = styled.div`
-  background: white;
+  background: rgba(93, 97, 124, 0.2);
   width: 90px;
   height: 90px;
   border-radius: 50%;

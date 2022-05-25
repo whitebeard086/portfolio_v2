@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const UserContainer = styled.div`
   max-width: 1250px;
   padding: 1rem;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 
   @media ${props => props.theme.breakpoints.xxl} {
     width: 80%;
@@ -18,8 +18,11 @@ export const UserContainer = styled.div`
     width: 80%;
   }
 
+  @media ${props => props.theme.breakpoints.xmd} {
+    width: 95%;
+  }
+
   @media ${props => props.theme.breakpoints.xsm} {
-    width: 90%;
     padding: 1rem;
   }
 
@@ -84,7 +87,6 @@ export const UserContainer = styled.div`
     }
 
     .info-container {
-      color: rgba(45, 46, 73);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -114,6 +116,7 @@ export const UserContainer = styled.div`
         .name {
           display: flex;
           gap: 2rem;
+          color: rgba(45, 46, 73);
 
           @media ${props => props.theme.breakpoints.lg} {
             flex-direction: column;
@@ -181,7 +184,11 @@ export const UserContainer = styled.div`
         gap: 7rem;
         margin-top: 1rem;
 
-        @media ${props => props.theme.breakpoints.sm} {
+        @media ${props => props.theme.breakpoints.lg} {
+          gap: 2rem;
+        }
+
+        @media ${props => props.theme.breakpoints.md} {
           flex-direction: column;
           gap: 1rem;
         }
@@ -207,7 +214,6 @@ export const UserContainer = styled.div`
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    color: rgba(45, 46, 73);
     background: rgba(93, 97, 124, 0.5);
     -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
     box-shadow: 1px 1px 5px 0px #2d2e49;
