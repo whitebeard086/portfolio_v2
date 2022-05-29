@@ -84,7 +84,7 @@ export const ProjectsCard = styled(motion.div)`
 `;
 
 export const ProjectItem = styled.div`
-  background: rgba(93, 97, 124, 0.6);
+  background: rgba(93, 97, 124, 0.8);
   -webkit-box-shadow: 1px 1px 7px 0px #2d2e49;
   box-shadow: 1px 1px 7px 0px #2d2e49;
   width: 350px;
@@ -144,7 +144,7 @@ export const ProjectTitle = styled.h4`
 export const ProjectDescription = styled.p`
   line-height: 1.3;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 500;
   color: #fff;
 
   @media ${props => props.theme.breakpoints.xmd} {

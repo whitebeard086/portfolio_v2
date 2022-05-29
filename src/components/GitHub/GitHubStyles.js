@@ -91,7 +91,7 @@ export const UserContainer = styled.div`
       flex-direction: column;
       justify-content: center;
       border-radius: 15px;
-      background: rgba(93, 97, 124, 0.5);
+      background: rgba(93, 97, 124, 0.8);
       -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
       box-shadow: 1px 1px 5px 0px #2d2e49;
       padding: 3rem;
@@ -116,7 +116,7 @@ export const UserContainer = styled.div`
         .name {
           display: flex;
           gap: 2rem;
-          color: rgba(45, 46, 73);
+          color: rgb(241, 258, 238);
 
           @media ${props => props.theme.breakpoints.lg} {
             flex-direction: column;
@@ -207,7 +207,7 @@ export const UserContainer = styled.div`
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    background: rgba(93, 97, 124, 0.5);
+    background: rgba(93, 97, 124, 0.8);
     -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
     box-shadow: 1px 1px 5px 0px #2d2e49;
     padding: 2rem 3rem;

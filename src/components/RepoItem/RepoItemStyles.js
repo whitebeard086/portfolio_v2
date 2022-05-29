@@ -8,7 +8,7 @@ export const Repo = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   border-radius: 15px;
-  background: rgba(93, 97, 124, 0.5);
+  background: rgba(93, 97, 124, 0.8);
   -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
   box-shadow: 1px 1px 5px 0px #2d2e49;
   transition: all 0.4s ease;
@@ -41,11 +41,11 @@ export const Repo = styled.div`
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
-
+    line-height: 1.3;
 
 
     a {
-      color: rgb(45, 46, 73);
+      color: rgb(241, 258, 238);
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -58,7 +58,7 @@ export const Repo = styled.div`
   }
 
   .description {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.3;
     color: #fff;
@@ -66,7 +66,7 @@ export const Repo = styled.div`
 
     
     @media ${props => props.theme.breakpoints.sm} {
-      font-size: 1rem;
+      font-size: 1.18rem;
     }
   }
 

@@ -11,7 +11,7 @@ const GithubItem = ({ label, value }) => {
 
 const Container = styled.div`
   p {
-    color: rgba(45, 46, 73);
+    color: rgb(241, 258, 238);
     font-weight: 500;
   }
 
