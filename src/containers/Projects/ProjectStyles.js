@@ -144,6 +144,8 @@ export const ProjectTitle = styled.h4`
 export const ProjectDescription = styled.p`
   line-height: 1.3;
   font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
 
   @media ${props => props.theme.breakpoints.xmd} {
     font-size: 1.18rem;

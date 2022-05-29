@@ -44,7 +44,7 @@ const About = () => {
     <AboutContainer id="about">
       <AboutContent>
         <GitHub user={user} />
-        <LatestRepos repos={repos} />
+        <LatestRepos repos={repos} user={user} />
       </AboutContent>
     </AboutContainer>
   );

@@ -150,7 +150,8 @@ export const UserContainer = styled.div`
         }
 
         p {
-          font-weight: 500;
+          font-weight: 400;
+          color: #fff;
           font-size: 1.2rem;
           line-height: 1.3;
 
@@ -197,14 +198,6 @@ export const UserContainer = styled.div`
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
-
-          p {
-            font-weight: 400;
-          }
-
-          h4 {
-            font-weight: 600;
-          }
         }
       }
     }
@@ -234,14 +227,6 @@ export const UserContainer = styled.div`
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-
-      p {
-        font-weight: 400;
-      }
-
-      h4 {
-        font-weight: 600;
-      }
     }
   }
 `;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Repo = styled.div`
   max-width: 1250px;
   padding: 1.2rem;
-  margin: 0.5rem auto;
+  margin: 0.8rem auto;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -59,8 +59,9 @@ export const Repo = styled.div`
 
   .description {
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.3;
+    color: #fff;
     margin: .5rem 0 0 1rem;
 
     
@@ -73,8 +74,8 @@ export const Repo = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
-    font-weight: 500;
-    color: rgb(45, 46, 73);
+    font-weight: 400;
+    color: #fff;
     margin: .5rem 0 0 1rem;
   }
 `;

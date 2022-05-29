@@ -1,8 +1,8 @@
 import { UserContainer } from "./GitHubStyles";
 import { GithubItem, SectionTitle } from "../../components";
 
-const GitHub = ({
-  user: {
+const GitHub = ({ user }) => {
+  const {
     name,
     avatar_url,
     bio,
@@ -13,8 +13,9 @@ const GitHub = ({
     followers,
     following,
     public_repos,
-  },
-}) => {
+  } = user;
+
+
   return (
     <UserContainer>
       <SectionTitle text1="My" text2="gitHub" text3="profile" />
