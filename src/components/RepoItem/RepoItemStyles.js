@@ -8,14 +8,14 @@ export const Repo = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   border-radius: 15px;
-  background: rgba(93, 97, 124, 0.8);
-  -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
-  box-shadow: 1px 1px 5px 0px #2d2e49;
+  background: rgba(45, 46, 73);
+  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
+  box-shadow: 1px 1px 6px 1px #2A2A43;
   transition: all 0.4s ease;
 
   &:hover {
     transform: scale(1.01);
-    background: rgba(93, 97, 124, 0.6);
+    background: rgba(45, 46, 73, 0.97);
   }
 
   @media ${props => props.theme.breakpoints.xxl} {
@@ -45,14 +45,15 @@ export const Repo = styled.div`
 
 
     a {
-      color: rgb(241, 258, 238);
+      color: rgb(255, 255, 255, 0.8);
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      transition: all .2s ease;
+      transition: all .4s ease;
 
       &:hover {
         transform: scale(1.008);
+        color: rgb(255, 255, 255);
       }
     }
   }
@@ -61,7 +62,7 @@ export const Repo = styled.div`
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.3;
-    color: #fff;
+    color: rgb(255, 255, 255, 0.7);
     margin: .5rem 0 0 1rem;
 
     
@@ -74,8 +75,9 @@ export const Repo = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
+    line-height: 1.3;
     font-weight: 400;
-    color: #fff;
+    color: rgb(255, 255, 255, 0.6);
     margin: .5rem 0 0 1rem;
   }
 `;

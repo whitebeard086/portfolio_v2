@@ -92,7 +92,7 @@ const Projects = () => {
                     <ProjectIcon data-tip="visit live site">
                       <LiveIcon />
                     </ProjectIcon>
-                    <Tooltip className="tooltip" effect="solid" arrowColor="#fff" />
+                    <Tooltip className="tooltip" effect="solid" arrowColor="#a0a1bf" />
                   </ProjectLink>
                 </ProjectIcons>
               </ProjectContent>

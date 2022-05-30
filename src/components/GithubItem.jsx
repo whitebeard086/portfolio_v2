@@ -11,13 +11,15 @@ const GithubItem = ({ label, value }) => {
 
 const Container = styled.div`
   p {
-    color: rgb(241, 258, 238);
+    color: rgb(255, 255, 255, 0.6);
     font-weight: 500;
+    line-height: 1.3;
   }
 
   h4 {
-    color: #fff;
+    color: rgb(255, 255, 255, 0.7);
     font-weight: 400;
+    line-height: 1.3;
   }
 `
 

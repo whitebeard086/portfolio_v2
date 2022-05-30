@@ -76,8 +76,8 @@ export const UserContainer = styled.div`
           width: 100%;
           object-fit: cover;
           border-radius: 15px;
-          -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
-          box-shadow: 1px 1px 5px 0px #2d2e49;
+          -webkit-box-shadow: 1px 1px 6px 1px #2a2a43;
+          box-shadow: 1px 1px 6px 1px #2a2a43;
 
           @media ${props => props.theme.breakpoints.md} {
             border-radius: 50%;
@@ -91,9 +91,9 @@ export const UserContainer = styled.div`
       flex-direction: column;
       justify-content: center;
       border-radius: 15px;
-      background: rgba(93, 97, 124, 0.8);
-      -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
-      box-shadow: 1px 1px 5px 0px #2d2e49;
+      background: rgba(45, 46, 73);
+      -webkit-box-shadow: 1px 1px 6px 1px #2a2a43;
+      box-shadow: 1px 1px 6px 1px #2a2a43;
       padding: 3rem;
 
       @media ${props => props.theme.breakpoints.xl} {
@@ -124,7 +124,7 @@ export const UserContainer = styled.div`
           }
 
           .hireable {
-            background: rgba(45, 46, 73, 0.85);
+            background: rgba(160, 161, 191, 0.3);
             color: #fff;
             padding: 0.5rem 1rem;
             border-radius: 10px;
@@ -151,7 +151,7 @@ export const UserContainer = styled.div`
 
         p {
           font-weight: 400;
-          color: #fff;
+          color: rgba(255, 255, 255, 0.7);
           font-size: 1.2rem;
           line-height: 1.3;
 
@@ -164,17 +164,20 @@ export const UserContainer = styled.div`
           margin: 1rem 0;
 
           a {
-            color: rgba(45, 46, 73);
+            color: rgba(225, 173, 105);
             text-transform: uppercase;
             padding: 0.5rem;
             font-weight: 500;
-            border: 1.5px solid rgba(45, 46, 73);
+            background: linear-gradient(rgb(45, 46, 73), rgb(45, 46, 73)) padding-box,
+              linear-gradient(45deg, #e1ad69 0%, #a0a1bf 100%) border-box;
+            border: 1.6px solid transparent;
             border-radius: 6px;
             transition: 0.5s ease;
 
             &:hover {
-              background: rgba(45, 46, 73, 0.8);
-              color: #fff;
+              background: linear-gradient(rgb(45, 46, 73), rgb(45, 46, 73)) padding-box,
+                linear-gradient(225deg, #e1ad69 0%, #a0a1bf 100%) border-box;
+              color: rgb(160, 161, 191);
             }
           }
         }
@@ -207,9 +210,9 @@ export const UserContainer = styled.div`
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    background: rgba(93, 97, 124, 0.8);
-    -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
-    box-shadow: 1px 1px 5px 0px #2d2e49;
+    background: rgba(45, 46, 73);
+    -webkit-box-shadow: 1px 1px 6px 1px #2a2a43;
+    box-shadow: 1px 1px 6px 1px #2a2a43;
     padding: 2rem 3rem;
     margin: 2rem 0;
 

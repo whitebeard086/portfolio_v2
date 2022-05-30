@@ -84,9 +84,9 @@ export const ProjectsCard = styled(motion.div)`
 `;
 
 export const ProjectItem = styled.div`
-  background: rgba(93, 97, 124, 0.8);
-  -webkit-box-shadow: 1px 1px 7px 0px #2d2e49;
-  box-shadow: 1px 1px 7px 0px #2d2e49;
+  background: rgba(45, 46, 73);
+  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
+  box-shadow: 1px 1px 6px 1px #2A2A43;
   width: 350px;
   border-radius: 10px;
 
@@ -145,7 +145,7 @@ export const ProjectDescription = styled.p`
   line-height: 1.3;
   font-size: 1.3rem;
   font-weight: 500;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
 
   @media ${props => props.theme.breakpoints.xmd} {
     font-size: 1.18rem;
@@ -170,15 +170,15 @@ export const ProjectTags = styled.div`
 `;
 
 export const Tag = styled.p`
-  background: rgba(93, 97, 124, 0.7);
-  color: rgb(241, 258, 238);
+  background: rgba(160, 161, 191, 0.3);
+  color: rgb(255, 255, 255);
   display: flex;
   font-size: 0.8rem;
   font-weight: 200;
   padding: 0.5rem;
   border-radius: 6px;
-  -webkit-box-shadow: 1px 1px 5px 0px #2d2e49;
-  box-shadow: 1px 1px 5px 0px #2d2e49;
+  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
+  box-shadow: 1px 1px 6px 1px #2A2A43;
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0.3rem;
@@ -191,10 +191,15 @@ export const ProjectIcons = styled(motion.div)`
   margin-bottom: 2rem;
 `;
 
-export const ProjectLink = styled.a``;
+export const ProjectLink = styled.a`
+  .tooltip {
+    background-color: rgba(160, 161, 191, 0.04) !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+`;
 
 export const ProjectIcon = styled(motion.div)`
-  background: rgba(45, 46, 73, 0.9);
+  background: rgba(160, 161, 191, 0.3);
   color: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
@@ -203,17 +208,13 @@ export const ProjectIcon = styled(motion.div)`
   height: 2.4rem;
   border-radius: 30%;
   margin: 0 1.2rem;
-  -webkit-box-shadow: 1px 1px 6px 0px #2d2e49;
-  box-shadow: 1px 1px 6px 0px #2d2e49;
+  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
+  box-shadow: 1px 1px 6px 1px #2A2A43;
   transition: all 0.4s ease;
 
   &:hover {
     transform: scale(1.05);
     color: rgba(255, 255, 255, 0.8);
-  }
-
-  &.tooltip {
-    background-color: #fff !important;
   }
 `;
 
