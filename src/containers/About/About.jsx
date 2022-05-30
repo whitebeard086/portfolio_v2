@@ -20,8 +20,8 @@ const About = () => {
 
   const getUserAndRepos = async () => {
     const params = new URLSearchParams({
-      sort: "created",
-      per_page: 5,
+      sort: "updated",
+      per_page: 10,
     });
 
     const [user, repos] = await Promise.all([github.get(""), github.get(`/repos?${params}`)]);

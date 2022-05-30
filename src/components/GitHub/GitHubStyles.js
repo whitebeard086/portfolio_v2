@@ -91,7 +91,7 @@ export const UserContainer = styled.div`
       flex-direction: column;
       justify-content: center;
       border-radius: 15px;
-      background: rgba(45, 46, 73);
+      background: rgba(45, 46, 73, 0.9);
       -webkit-box-shadow: 1px 1px 6px 1px #2a2a43;
       box-shadow: 1px 1px 6px 1px #2a2a43;
       padding: 3rem;
@@ -168,7 +168,7 @@ export const UserContainer = styled.div`
             text-transform: uppercase;
             padding: 0.5rem;
             font-weight: 500;
-            background: linear-gradient(rgb(45, 46, 73), rgb(45, 46, 73)) padding-box,
+            background: linear-gradient(rgba(45, 46, 73, 0.9), rgba(45, 46, 73, 0.9)) padding-box,
               linear-gradient(45deg, #e1ad69 0%, #a0a1bf 100%) border-box;
             border: 1.6px solid transparent;
             border-radius: 6px;
