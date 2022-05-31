@@ -58,7 +58,7 @@ export const UserContainer = styled.div`
           bottom: 0;
           right: 0;
           left: 0;
-          background: rgba(45, 46, 73, 0.5);
+          background: var(--primary-bg-img);
           border-radius: 15px;
           transition: 0.5s ease;
 
@@ -76,8 +76,8 @@ export const UserContainer = styled.div`
           width: 100%;
           object-fit: cover;
           border-radius: 15px;
-          -webkit-box-shadow: 1px 1px 6px 1px #2a2a43;
-          box-shadow: 1px 1px 6px 1px #2a2a43;
+          -webkit-box-shadow: var(--primary-shadow);
+          box-shadow: var(--primary-shadow);
 
           @media ${props => props.theme.breakpoints.md} {
             border-radius: 50%;
@@ -91,9 +91,9 @@ export const UserContainer = styled.div`
       flex-direction: column;
       justify-content: center;
       border-radius: 15px;
-      background: rgba(45, 46, 73, 0.9);
-      -webkit-box-shadow: 1px 1px 6px 1px #2a2a43;
-      box-shadow: 1px 1px 6px 1px #2a2a43;
+      background: var(--primary-bg);
+      -webkit-box-shadow: var(--primary-shadow);
+      box-shadow: var(--primary-shadow);
       padding: 3rem;
 
       @media ${props => props.theme.breakpoints.xl} {
@@ -116,7 +116,7 @@ export const UserContainer = styled.div`
         .name {
           display: flex;
           gap: 2rem;
-          color: rgb(241, 258, 238);
+          color: var(--text-color-special);
 
           @media ${props => props.theme.breakpoints.lg} {
             flex-direction: column;
@@ -124,7 +124,9 @@ export const UserContainer = styled.div`
           }
 
           .hireable {
-            background: rgba(160, 161, 191, 0.3);
+            background: var(--secondary-bg);
+            -webkit-box-shadow: var(--secondary-shadow);
+            box-shadow: var(--secondary-shadow);
             color: #fff;
             padding: 0.5rem 1rem;
             border-radius: 10px;
@@ -151,7 +153,7 @@ export const UserContainer = styled.div`
 
         p {
           font-weight: 400;
-          color: rgba(255, 255, 255, 0.7);
+          color: var(--text-color);
           font-size: 1.2rem;
           line-height: 1.3;
 
@@ -162,22 +164,30 @@ export const UserContainer = styled.div`
 
         .profile-link {
           margin: 1rem 0;
+          width: fit-content;
+          text-transform: uppercase;
+          padding: 0.8rem;
+          font-weight: 500;
+          background: linear-gradient(var(--primary-btn), var(--primary-btn)) padding-box,
+            linear-gradient(45deg, #e1ad69 0%, #a0a1bf 100%) border-box;
+          border: 1.6px solid transparent;
+          border-radius: 6px;
+          transition: all 0.5s ease;
+
+          &:hover {
+            background: linear-gradient(var(--primary-btn), var(--primary-btn)) padding-box,
+              linear-gradient(225deg, #e1ad69 0%, #a0a1bf 100%) border-box;
+          }
 
           a {
-            color: rgba(225, 173, 105);
-            text-transform: uppercase;
-            padding: 0.5rem;
-            font-weight: 500;
-            background: linear-gradient(rgba(45, 46, 73, 0.9), rgba(45, 46, 73, 0.9)) padding-box,
-              linear-gradient(45deg, #e1ad69 0%, #a0a1bf 100%) border-box;
-            border: 1.6px solid transparent;
-            border-radius: 6px;
-            transition: 0.5s ease;
+            background: linear-gradient(90deg, var(--text-color) 0%, var(--text-color-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
             &:hover {
-              background: linear-gradient(rgb(45, 46, 73), rgb(45, 46, 73)) padding-box,
-                linear-gradient(225deg, #e1ad69 0%, #a0a1bf 100%) border-box;
-              color: rgb(160, 161, 191);
+              background: linear-gradient(270deg, var(--text-color) 0%, var(--text-color-gold) 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
           }
         }
@@ -210,9 +220,9 @@ export const UserContainer = styled.div`
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    background: rgba(45, 46, 73);
-    -webkit-box-shadow: 1px 1px 6px 1px #2a2a43;
-    box-shadow: 1px 1px 6px 1px #2a2a43;
+    background: var(--primary-bg);
+    -webkit-box-shadow: var(--primary-shadow);
+    box-shadow: var(--primary-shadow);
     padding: 2rem 3rem;
     margin: 2rem 0;
 

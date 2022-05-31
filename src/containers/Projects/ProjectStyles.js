@@ -5,7 +5,7 @@ import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: rgba(93, 97, 124, 0.1);
+  background: var(--section-bg);
   display: flex;
   justify-content: center;
   padding-bottom: 8rem;
@@ -57,8 +57,8 @@ export const Categories = styled.div`
   cursor: pointer;
 
   &.active {
-    background: rgba(45, 46, 73, 0.9);
-    color: rgba(255, 255, 255);
+    background: var(--primary-bg);
+    color: var(--text-color);
     font-weight: 500;
   }
 
@@ -84,9 +84,9 @@ export const ProjectsCard = styled(motion.div)`
 `;
 
 export const ProjectItem = styled.div`
-  background: rgba(45, 46, 73);
-  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
-  box-shadow: 1px 1px 6px 1px #2A2A43;
+  background: var(--primary-bg);
+  -webkit-box-shadow: var(--primary-shadow);
+  box-shadow: var(--primary-shadow);
   width: 350px;
   border-radius: 10px;
 
@@ -127,7 +127,7 @@ export const ProjectContent = styled.div`
 export const ProjectTitle = styled.h4`
   margin: 1rem 0;
   font-size: 2rem;
-  color: rgb(241, 258, 238);
+  color: var(--text-color-special);
   display: flex;
   text-align: center;
   justify-content: center;
@@ -145,7 +145,7 @@ export const ProjectDescription = styled.p`
   line-height: 1.3;
   font-size: 1.3rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-color);
 
   @media ${props => props.theme.breakpoints.xmd} {
     font-size: 1.18rem;
@@ -170,15 +170,15 @@ export const ProjectTags = styled.div`
 `;
 
 export const Tag = styled.p`
-  background: rgba(160, 161, 191, 0.3);
-  color: rgb(255, 255, 255);
+  background: var(--secondary-bg);
+  color: var(--text-color-lighter);
   display: flex;
   font-size: 0.8rem;
   font-weight: 200;
   padding: 0.5rem;
   border-radius: 6px;
-  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
-  box-shadow: 1px 1px 6px 1px #2A2A43;
+  -webkit-box-shadow: var(--secondary-shadow);
+  box-shadow: var(--secondary-shadow);
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0.3rem;
@@ -193,14 +193,15 @@ export const ProjectIcons = styled(motion.div)`
 
 export const ProjectLink = styled.a`
   .tooltip {
-    background-color: rgba(160, 161, 191, 0.04) !important;
-    color: rgba(255, 255, 255, 0.4) !important;
+    background-color: var(--tooltip-bg) !important;
+    color: var(--tooltip-text) !important;
+    transition: all 0.4s ease !important;
   }
 `;
 
 export const ProjectIcon = styled(motion.div)`
-  background: rgba(160, 161, 191, 0.3);
-  color: rgba(255, 255, 255, 0.6);
+  background: var(--secondary-bg);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,13 +209,13 @@ export const ProjectIcon = styled(motion.div)`
   height: 2.4rem;
   border-radius: 30%;
   margin: 0 1.2rem;
-  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
-  box-shadow: 1px 1px 6px 1px #2A2A43;
+  -webkit-box-shadow: var(--secondary-shadow);
+  box-shadow: var(--secondary-shadow);
   transition: all 0.4s ease;
 
   &:hover {
     transform: scale(1.05);
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
   }
 `;
 

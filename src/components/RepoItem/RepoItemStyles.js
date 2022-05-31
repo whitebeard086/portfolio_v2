@@ -8,14 +8,14 @@ export const Repo = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   border-radius: 15px;
-  background: rgba(45, 46, 73);
-  -webkit-box-shadow: 1px 1px 6px 1px #2A2A43;
-  box-shadow: 1px 1px 6px 1px #2A2A43;
+  background: var(--primary-bg);
+  -webkit-box-shadow: var(--primary-shadow);
+  box-shadow: var(--primary-shadow);
   transition: all 0.4s ease;
 
   &:hover {
     transform: scale(1.01);
-    background: rgba(45, 46, 73, 0.97);
+    background: var(--primary-bg-hover);
   }
 
   @media ${props => props.theme.breakpoints.xxl} {
@@ -62,7 +62,7 @@ export const Repo = styled.div`
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.3;
-    color: rgb(255, 255, 255, 0.7);
+    color: var(--text-color);
     margin: .5rem 0 0 1rem;
 
     
@@ -77,7 +77,7 @@ export const Repo = styled.div`
     font-size: 0.85rem;
     line-height: 1.3;
     font-weight: 400;
-    color: rgb(255, 255, 255, 0.6);
+    color: var(--text-color-darker);
     margin: .5rem 0 0 1rem;
   }
 `;

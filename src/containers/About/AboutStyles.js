@@ -7,7 +7,7 @@ export const AboutContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(93, 97, 124, 0.4);
+  background: var(--section-bg-darker);
   
 `;
 
