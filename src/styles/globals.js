@@ -31,6 +31,8 @@ const GlobalStyles = createGlobalStyle`
 
     --primary-shadow: 1px 1px 3px 1px #2D2E49;
     --secondary-shadow: 1px 1px 1px 1px #5d617c;
+
+    --m-width: 1250px;
   }
 
   body {

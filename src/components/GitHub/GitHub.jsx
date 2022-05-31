@@ -1,5 +1,5 @@
 import { UserContainer } from "./GitHubStyles";
-import { GithubItem, SectionTitle } from "../../components";
+import { GithubItem, SectionTitle, Button } from "../../components";
 
 const GitHub = ({ user }) => {
   const {
@@ -32,11 +32,7 @@ const GitHub = ({ user }) => {
               {hireable && <p className="hireable">Available for hire</p>}
             </div>
             <p>{bio}</p>
-            <div className="profile-link">
-              <a href={html_url} target="_blank" rel="noopener noreferrer">
-                Visit GitHub Profile
-              </a>
-            </div>
+          <Button variant="github" buttonText="visit github profile" link={html_url} />
           </div>
           <div className="bottom-info">
             <GithubItem label="Email" value={email} />

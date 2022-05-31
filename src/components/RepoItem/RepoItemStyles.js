@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Repo = styled.div`
-  max-width: 1250px;
   padding: 1.2rem;
   margin: 0.8rem auto;
   display: flex;
@@ -16,26 +15,6 @@ export const Repo = styled.div`
   &:hover {
     transform: scale(1.01);
     background: var(--primary-bg-hover);
-  }
-
-  @media ${props => props.theme.breakpoints.xxl} {
-    width: 80%;
-  }
-
-  @media ${props => props.theme.breakpoints.xl} {
-    width: 75%;
-  }
-
-  @media ${props => props.theme.breakpoints.lg} {
-    width: 80%;
-  }
-
-  @media ${props => props.theme.breakpoints.xmd} {
-    /* width: 90%; */
-  }
-
-  @media ${props => props.theme.breakpoints.xsm} {
-    padding: 1rem;
   }
 
   h3 {

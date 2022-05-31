@@ -161,36 +161,6 @@ export const UserContainer = styled.div`
             font-size: 1rem;
           }
         }
-
-        .profile-link {
-          margin: 1rem 0;
-          width: fit-content;
-          text-transform: uppercase;
-          padding: 0.8rem;
-          font-weight: 500;
-          background: linear-gradient(var(--primary-btn), var(--primary-btn)) padding-box,
-            linear-gradient(45deg, #e1ad69 0%, #a0a1bf 100%) border-box;
-          border: 1.6px solid transparent;
-          border-radius: 6px;
-          transition: all 0.5s ease;
-
-          &:hover {
-            background: linear-gradient(var(--primary-btn), var(--primary-btn)) padding-box,
-              linear-gradient(225deg, #e1ad69 0%, #a0a1bf 100%) border-box;
-          }
-
-          a {
-            background: linear-gradient(90deg, var(--text-color) 0%, var(--text-color-gold) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-
-            &:hover {
-              background: linear-gradient(270deg, var(--text-color) 0%, var(--text-color-gold) 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
-          }
-        }
       }
 
       .bottom-info {

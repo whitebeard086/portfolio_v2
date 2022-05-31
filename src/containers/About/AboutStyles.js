@@ -12,7 +12,7 @@ export const AboutContainer = styled.section`
 `;
 
 export const AboutContent = styled.div`
-  max-width: 1250px;
+  max-width: var(--m-width);
   display: flex;
   flex-direction: column;
   align-items: center;

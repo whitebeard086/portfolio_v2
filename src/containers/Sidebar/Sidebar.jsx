@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
+import { Button } from "../../components";
 import { socialIcons, mobileLinks } from "../../constants/headerData";
 import {
   CloseIcon,
   Container,
-  Cv,
   Icon,
   NavLink,
   NavLinks,
@@ -25,7 +25,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </NavLink>
         ))}
       </NavLinks>
-      <Cv href="docs/Resume.pdf" download>Résumé</Cv>
+      <Button buttonText="Résumé" link="docs/Resume.pdf" />
       <SocialIcons>
         {socialIcons.map(({ icon, link, id }) => (
           <SocialIcon key={id} href={link} target="_blank" rel="noopener noreferrer">

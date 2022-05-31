@@ -47,7 +47,7 @@ export const NavLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 `;
 
 export const NavLink = styled.a`

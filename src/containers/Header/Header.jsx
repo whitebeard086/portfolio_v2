@@ -11,8 +11,8 @@ import {
   NavLink,
   NavLinks,
   MobileMenu,
-  Cv,
 } from "./HeaderStyles";
+import { Button } from "../../components";
 
 const Header = ({ className, toggleSidebar }) => {
   const [navbar, setNavbar] = useState(false);
@@ -61,9 +61,7 @@ const Header = ({ className, toggleSidebar }) => {
             </NavLink>
           ))}
         </NavLinks>
-          <Cv href="/docs/Resume.pdf" download>
-            Résumé
-          </Cv>
+        <Button variant="header" buttonText="Résumé" link="docs/Resume.pdf" />
       </NavContainer>
       <MobileMenu onClick={toggleSidebar} />
     </Container>

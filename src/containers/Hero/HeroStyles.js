@@ -92,7 +92,7 @@ export const ButtonContainer = styled.div`
   gap: 2rem;
 `;
 
-export const Button = styled.a`
+export const Button1 = styled.a`
   padding: 1rem 1.5rem;
   border-radius: 4px;
   background-color: ${({ transparent }) => (transparent ? "none" : "#2d2e49")};

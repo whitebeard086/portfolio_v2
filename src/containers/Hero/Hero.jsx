@@ -5,7 +5,8 @@ import { client } from "../../client";
 import { AppWrap } from "../../wrapper/";
 
 import { BodyText, Contain } from "../../styles/GlobalComponents";
-import { Container, HeroBg, Text, MainText, Video, Button, ButtonContainer } from "./HeroStyles";
+import { Container, HeroBg, Text, MainText, Video, ButtonContainer } from "./HeroStyles";
+import { Button } from "../../components";
 
 const Hero = () => {
   const [item, setItem] = useState(null);
@@ -35,10 +36,8 @@ const Hero = () => {
             <MainText>{item.heading}</MainText>
             <BodyText hero>{item.secondText}</BodyText>
             <ButtonContainer>
-              <Button href="#projects">My Projects</Button>
-              <Button transparent href="#about">
-                Learn More
-              </Button>
+              <Button variant="hero" buttonText="my projects" link="#projects" />
+              <Button variant="transparent" buttonText="learn more" link="#projects" />
             </ButtonContainer>
           </Text>
         )}
