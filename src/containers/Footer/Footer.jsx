@@ -19,6 +19,7 @@ import {
   Text,
 } from "./FooterStyles";
 import { client, urlFor } from "../../client";
+import { Button2 } from "../../components/Button";
 
 const Footer = () => {
   const [footer, setFooter] = useState(null);
@@ -102,9 +103,7 @@ const Footer = () => {
                     onChange={handleInputChange}
                   />
                 </ContactMessage>
-                <Button type="button" onClick={handleSubmit}>
-                  {loading ? "Sending..." : "Send Message"}
-                </Button>
+                <Button2 variant="footer" type="button" click={handleSubmit} content={loading ? "Sending..." : "Send Message"} />
               </ContactForm>
             ) : (
               <SuccessMessage>

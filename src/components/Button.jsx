@@ -16,6 +16,16 @@ const Button = ({ link, buttonText, variant }) => {
   );
 };
 
+export const Button2 = ({ variant, type, click, content }) => {
+  return (
+    <ButtonItem variant={variant}>
+      <button type={type} onClick={click}>
+        {content}
+      </button>
+    </ButtonItem>
+  )
+}
+
 const ButtonItem = styled.div`
   display: flex;
   align-items: center;
@@ -55,6 +65,34 @@ const ButtonItem = styled.div`
     border: ${({ variant }) => (variant === "transparent" && "2px solid var(--text-color)" )};
     background: ${({ variant }) => (variant === "transparent" && "none" )};
   }
+
+  button {
+    color: var(--text-color-gold);
+    transition: all 0.4s ease;
+    padding: 0.7rem 1.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 500;
+
+    @media ${props => props.theme.breakpoints.xsm} {
+      padding: .7rem 1.2rem;
+      font-size: .8rem;
+    }
+
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+
+  &:hover {
+    transform: scale(0.96);
+    background: linear-gradient(var(--primary-btn), var(--primary-btn)) padding-box,
+      linear-gradient(225deg, #e1ad69 0%, #a0a1bf 100%) border-box;
+    border: ${({ variant }) => (variant === "transparent" && "2px solid var(--text-color)" )};
+    background: ${({ variant }) => (variant === "transparent" && "none" )};
+  }
+
   &:active {
     transform: scale(1.1);
   }
