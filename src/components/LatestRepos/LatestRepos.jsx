@@ -9,11 +9,13 @@ const LatestRepos = ({ repos, user }) => {
       {repos?.map(repo => (
         <RepoItem key={repo.id} repo={repo} user={user} />
       ))}
-      <Button
-        variant="repos"
-        buttonText="see more"
-        link="https://github.com/whitebeard086?tab=repositories"
-      />
+      <div className="btn">
+        <Button
+          variant="repos"
+          buttonText="see more"
+          link="https://github.com/whitebeard086?tab=repositories"
+        />
+      </div>
     </Repos>
   );
 };

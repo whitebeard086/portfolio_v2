@@ -116,7 +116,7 @@ export const UserContainer = styled.div`
         .name {
           display: flex;
           gap: 2rem;
-          color: var(--text-color-special);
+          color: var(--text-color-gold);
 
           @media ${props => props.theme.breakpoints.lg} {
             flex-direction: column;

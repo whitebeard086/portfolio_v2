@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: rgba(93, 97, 124, 0.4);
+  background: var(--section-bg-darker);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ export const SkillItem = styled(motion.div)`
 `;
 
 export const SkillImage = styled.div`
-  background: rgba(93, 97, 124, 0.2);
+  background: var(--primary-bg-tag);
   width: 90px;
   height: 90px;
   border-radius: 50%;

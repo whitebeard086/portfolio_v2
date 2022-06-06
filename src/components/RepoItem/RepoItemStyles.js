@@ -22,17 +22,22 @@ export const Repo = styled.div`
     font-weight: bold;
     line-height: 1.3;
 
+    @media ${props => props.theme.breakpoints.sm} {
+      font-size: 1.2rem;
+    }
 
     a {
-      color: rgb(255, 255, 255, 0.8);
+      color: var(--text-color-gold);
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
       transition: all .4s ease;
 
       &:hover {
         transform: scale(1.008);
-        color: rgb(255, 255, 255);
+        color: var(--text-color);
       }
     }
   }

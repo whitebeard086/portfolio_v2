@@ -127,7 +127,7 @@ export const ProjectContent = styled.div`
 export const ProjectTitle = styled.h4`
   margin: 1rem 0;
   font-size: 2rem;
-  color: var(--text-color-special);
+  color: var(--text-color-gold);
   display: flex;
   text-align: center;
   justify-content: center;
@@ -201,7 +201,7 @@ export const ProjectLink = styled.a`
 
 export const ProjectIcon = styled(motion.div)`
   background: var(--secondary-bg);
-  color: var(--text-color);
+  color: var(--text-color-gold);
   display: flex;
   align-items: center;
   justify-content: center;

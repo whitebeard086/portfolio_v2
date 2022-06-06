@@ -31,6 +31,7 @@ const ButtonItem = styled.div`
   align-items: center;
   justify-content: center;
   width: fit-content;
+  width: ${({ variant }) => (variant === "repos" && "50%" )};
   border-radius: 6px;
   color: rgba(222, 223, 238);
   transition: all 0.4s ease;

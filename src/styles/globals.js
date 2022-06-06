@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     --primary-bg: rgba(45, 46, 73, 0.85);
     --primary-bg-hover: rgba(45, 46, 73, 0.95);
     --primary-bg-img: rgba(45, 46, 73, 0.5);
+    --primary-bg-tag: rgba(45, 46, 73, 0.1);
     --secondary-bg: rgba(160, 161, 191, 0.3);
     --tooltip-bg: rgba(160, 161, 191, 0.04);
     --tooltip-text: rgba(255, 255, 255, 0.4);
